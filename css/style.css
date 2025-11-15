@@ -1,12 +1,39 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v49-latin-regular.woff2') format('woff2'); 
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v49-latin-600.woff2') format('woff2'); 
+}
+
 :root {
 	--color-brand: #011c44;
 	--color-primary-light: #fff;
 	--color-accent: #2b7fff;
-
+	--color-secondary-grey: #747272;
+	--fonts-play: "play", sans-serif;
+	--fonts-roboto: "Roboto", sans-serif;
 }
 
 .body {
-	color: var(--color-brand);;
+	color: var(--color-brand);
+	font-family: var(--fonts-roboto);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.33333;
+}
+
+address {
+	font-style: normal;
 }
 
 .header {
@@ -14,21 +41,21 @@
 .header__nav {
 }
 .header-logo {
-	
 }
 .logo-top {
 }
 /* .header__menu {
 } */
 .menu-top {
+	font-weight: 400;
 }
 .menu-top__list-item {
 }
 .menu-top__link {
-	
 }
 .menu-top__link:hover {
 	color: var(--color-accent);
+	text-decoration: underline;
 }
 /* .header__social {
 } */
@@ -47,6 +74,10 @@
 .main-title_bigblu {
 	text-transform: capitalize;
 	color: var(--color-accent);
+	font-family: var(--fonts-play);
+	font-size: 140px;
+	font-weight: 700;
+	line-height: 0.81429;
 }
 .hero__button-block {
 }
@@ -58,12 +89,14 @@
 	cursor: pointer;
 }
 .button-main:hover {
-	color: 	var(--color-brand);
+	color: var(--color-brand);
 	background: transparent;
 	border: 2px solid var(--color-accent);
 	border-radius: 32px;
 }
 .button-description {
+	font-size: 12px;
+	line-height: 1.5;
 }
 .about-us {
 }
@@ -74,6 +107,7 @@
 .title {
 	font-size: 64px;
 	font-weight: 700;
+	font-family: var(--fonts-play);
 }
 .about-us__title .title_color-blu {
 	color: var(--color-accent);
@@ -86,6 +120,7 @@
 .about-us__text {
 	font-size: 22px;
 	font-weight: 400;
+	line-height: 38px;
 }
 .about-us__text_color-black {
 	font-size: 22px;
@@ -109,9 +144,8 @@
 	text-align: center;
 }
 .why-choose-us__text {
-	font-size: 18px;
 	font-weight: 400;
-	line-height: 1.33333;
+	line-height: 24px;
 	text-align: center;
 }
 .our-procedures {
@@ -132,7 +166,6 @@
 .subtitle {
 	font-size: 22px;
 	font-weight: 400;
-	line-height: 1.18182;
 	text-align: center;
 	color: var(--color-primary-light);
 }
@@ -153,6 +186,7 @@
 .block-sign-up__title {
 }
 .footer {
+	font-size: 16px;
 	background: var(--color-brand) url(../img/footer-bg-right.png) bottom right no-repeat;
 }
 .footer__nav {
@@ -168,6 +202,7 @@
 .menu-bottom__list-item {
 }
 .menu-bottom__link {
+	color: var(--color-primary-light);
 }
 .footer__adress {
 }
@@ -178,6 +213,12 @@
 .adress__list-item {
 }
 .address__link {
+	color: var(--color-primary-light);
+}
+.address__link:hover {
+	font-size: 16px;
+	color: var(--color-primary-light);
+	text-decoration: underline 2px var(--color-accent);
 }
 .social-bottom {
 }
@@ -188,4 +229,10 @@
 .social-bottom__img {
 }
 .privacy-policy {
+	color: var(--color-primary-light);
+}
+
+.privacy-date {
+	font-size: 13px;
+	color: var(--color-secondary-grey);
 }
