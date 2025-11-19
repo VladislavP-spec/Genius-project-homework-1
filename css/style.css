@@ -15,6 +15,8 @@
   src: url('../fonts/roboto-v49-latin-600.woff2') format('woff2'); 
 }
 
+
+
 :root {
 	--color-brand: #011c44;
 	--color-primary-light: #fff;
@@ -37,7 +39,15 @@ address {
 }
 
 .header {
+	padding: 32px 0px;
 }
+.container {
+	width: 100%;
+	max-width: 1288px;	
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
 .header__nav {
 }
 .header-logo {
@@ -68,6 +78,7 @@ address {
 .social-top__image {
 }
 .hero {
+	padding: 16.52px 0 126.48px 0;
 }
 .main-title {
 }
@@ -87,6 +98,7 @@ address {
 	border-radius: 32px;
 	border: 2px solid var(--color-accent);
 	cursor: pointer;
+	padding: 16px 32px;
 }
 .button-main:hover {
 	color: var(--color-brand);
@@ -130,6 +142,7 @@ address {
 .about-us__imb-block {
 }
 .why-choose-us {
+	padding: 176px 0 96px 0;
 }
 .why-choose-us__title {
 	text-align: center;
@@ -177,8 +190,15 @@ address {
 }
 .title {
 }
-.title_color-blu .how-find-us__image {
+.title_color-blu {
+
+}  
+.iframe {
+	width: 100%;
+	max-width: 600px;
+	height: 450px;
 }
+
 .how-find-us__block-sign-up {
 }
 .block-sign-up {
@@ -188,6 +208,7 @@ address {
 .footer {
 	font-size: 16px;
 	background: var(--color-brand) url(../img/footer-bg-right.png) bottom right no-repeat;
+	padding: 48px 0;
 }
 .footer__nav {
 }
