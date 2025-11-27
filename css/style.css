@@ -1,21 +1,19 @@
 /* roboto-regular - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/roboto-v49-latin-regular.woff2') format('woff2'); 
+	font-display: swap;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/roboto-v49-latin-regular.woff2") format("woff2");
 }
 /* roboto-600 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/roboto-v49-latin-600.woff2') format('woff2'); 
+	font-display: swap;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	src: url("../fonts/roboto-v49-latin-600.woff2") format("woff2");
 }
-
-
 
 :root {
 	--color-brand: #011c44;
@@ -40,15 +38,25 @@ address {
 
 .header {
 	padding: 32px 0px;
+	background-color: lightskyblue;
 }
-.container {
+._container {
 	width: 100%;
-	max-width: 1288px;	
+	max-width: 1288px;
 	margin: 0 auto;
 	padding: 0 24px;
 }
 
+.header__flex-container {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
 .header__nav {
+	display: flex;
+	flex-grow: 1;
+	gap: 40px;
 }
 .header-logo {
 }
@@ -57,7 +65,12 @@ address {
 /* .header__menu {
 } */
 .menu-top {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	gap: 56px;
 	font-weight: 400;
+	align-items: center;
 }
 .menu-top__list-item {
 }
@@ -70,6 +83,8 @@ address {
 /* .header__social {
 } */
 .social-top {
+	display: flex;
+	gap: 32px;
 }
 .social-top__list-item {
 }
@@ -79,6 +94,7 @@ address {
 }
 .hero {
 	padding: 16.52px 0 126.48px 0;
+	background: url(../img/bcmain&header.jpg) center top no-repeat;
 }
 .main-title {
 }
@@ -112,9 +128,17 @@ address {
 }
 .about-us {
 }
+.about-us__flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+
 .about-us__title-block {
 }
 .about-us__title {
+text-align: center;
 }
 .title {
 	font-size: 64px;
@@ -133,7 +157,13 @@ address {
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 38px;
+	max-width: 650px;
 }
+
+.about-us__text:not(:last-child) {
+	margin-bottom: 40px;
+}
+
 .about-us__text_color-black {
 	font-size: 22px;
 	font-weight: 600;
@@ -143,18 +173,43 @@ address {
 }
 .why-choose-us {
 	padding: 176px 0 96px 0;
+	background-color: #9dc4f9; /* нужно будет поменять */
 }
+
+.why-choose-us._container {
+	max-width: 1060px;
+}
+
 .why-choose-us__title {
 	text-align: center;
+	max-width: 432px;
+	margin: 0 auto 40px auto;
+	
 }
+
 .why-choose-us__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 56px;
+	flex-wrap: wrap;
 }
 .why-choose-us__list-item {
+	text-align: center;
+	flex: 0 0 calc((100% - 112px) / 3);
+	padding: 24px 32px;
+	border-radius: 32px;
+	box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+	background: #fff;
 }
 .why-choose-us__block {
+	
 }
+
 .why-choose-us__image {
+	width: 48px;
+	height: 48px;
 	text-align: center;
+	margin: 0 0 8px 0;
 }
 .why-choose-us__text {
 	font-weight: 400;
@@ -166,15 +221,55 @@ address {
 .our-procedures__title {
 	text-align: center;
 }
-.arrow-left {
+.button-arrow-left, 
+.button-arrow-right {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 1px solid var(--color-brand);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: var(--color-brand);
 }
+
+.button-arrow-left:hover {
+	background-color: var(--color-accent);
+	border: 1px solid var(--color-primary-light);
+	fill: var(--color-primary-light);
+}
+
 .our-procedures__list {
+	max-width: 1064px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;	
+	gap: 8px;
+	flex-wrap: wrap;
 }
-.our-procedures__list-item {
+.our-procedures__list-item:nth-child(1) {
+	background: url(../img/face_masks0.jpg) center no-repeat;
+	
 }
+.our-procedures__list-item:nth-child(2) {
+	background: url(../img/facial_injections.jpg) center no-repeat;
+	
+}
+.our-procedures__list-item:nth-child(3) {
+	background: url(../img/facial_cleancing.jpg) center no-repeat;
+	
+}
+
 .our-procedures__block {
+	text-align: center;
+	width: 344px;
+	height: 456px;
+	padding: 372px 77px 0 115px;	
 }
+
+
 .our-procedures__image {
+
 }
 .subtitle {
 	font-size: 22px;
@@ -182,21 +277,34 @@ address {
 	text-align: center;
 	color: var(--color-primary-light);
 }
-.arrow_right {
+.button-arrow-right {
+	transform: rotate(180deg);
 }
+
 .how-find-us {
+	padding: 96px 0 96px 0;
+	background-color: #f3f7ff;
+}
+.how-find-us._container {
+	max-width: 1060px;
+}
+.how-find-us__flex-container {
+	display: flex;
+	justify-content: center;	
+	gap: 32px;
 }
 .how-find-us__title {
+	text-align: center;
+	margin: 0 0 48px 0;
 }
 .title {
 }
 .title_color-blu {
-
-}  
+}
 .iframe {
 	width: 100%;
-	max-width: 600px;
-	height: 450px;
+	max-width: 605px;
+	height: 481px;
 }
 
 .how-find-us__block-sign-up {
@@ -208,11 +316,18 @@ address {
 .footer {
 	font-size: 16px;
 	background: var(--color-brand) url(../img/footer-bg-right.png) bottom right no-repeat;
-	padding: 48px 0;
+	padding: 56px 0;
 }
+.footer__flex-container {
+	display: flex;
+	justify-content: space-between;	
+	gap: 186px;
+}
+
 .footer__nav {
 }
 .footer__logo {
+	flex: 0 1 83px;
 }
 .logo-bottom {
 }
@@ -225,6 +340,8 @@ address {
 .menu-bottom__link {
 	color: var(--color-primary-light);
 }
+
+
 .footer__adress {
 }
 .adress {
@@ -247,7 +364,12 @@ address {
 }
 .social-bottom__link {
 }
-.social-bottom__img {
+.social-bottom__icon{
+	fill: var(--color-primary-light);
+	
+}
+.social-bottom__icon:hover{
+	fill: var(--color-accent);
 }
 .privacy-policy {
 	color: var(--color-primary-light);
@@ -257,3 +379,5 @@ address {
 	font-size: 13px;
 	color: var(--color-secondary-grey);
 }
+
+
