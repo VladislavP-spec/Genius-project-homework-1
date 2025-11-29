@@ -41,5 +41,9 @@ button {
 	background: transparent;
 	cursor: pointer;
 }
+
+a {
+	display: inline-block;
+}
 /* ------------------------------ */
 

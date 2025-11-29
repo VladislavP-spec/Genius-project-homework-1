@@ -83,9 +83,15 @@
       <section class="hero">
         <div class="_container">
           <h1 class="main-title">Косметологічна клініка</h1>
-          <span class="main-title_bigblu">beauty zone</span>
+          <span class="main-title_bigblu" href="">
+            beauty <br />
+            zone
+          </span>
+
           <div class="hero__button-block">
-            <button class="button-main" type="button">Замовити дзвінок</button>
+            <button class="button-main modal__open-button" type="button">
+              Замовити дзвінок
+            </button>
             <p class="button-description">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -176,48 +182,56 @@
           <h2 class="our-procedures__title title">
             Наші <span class="title_color-blu">процедури</span>
           </h2>
-          <button class="button-arrow-left" type="button">
-            <svg width="17" height="17">
-              <use href="./img/sprite.svg#icon-arrowonly_left"></use>
-            </svg>
-          </button>
-          <ul class="our-procedures__list">
-            <li class="our-procedures__list-item">
-              <article class="our-procedures__block">
-                <!-- <img
-                  class="our-procedures__image"
-                  src="#"
-                  alt="masks for face"
-                /> -->
-                <h3 class="subtitle">Маски для обличчя</h3>
-              </article>
-            </li>
-            <li class="our-procedures__list-item">
-              <article class="our-procedures__block">
-                <!-- <img
-                  class="our-procedures__image"
-                  src="./img/facial_injections.jpg"
-                  alt="a shot in the face"
-                /> -->
-                <h3 class="subtitle">Ін'єкції для обличчя</h3>
-              </article>
-            </li>
-            <li class="our-procedures__list-item">
-              <article class="our-procedures__block">
-                <!-- <img
-                  class="our-procedures__image"
-                  src="./img/facial_cleancing.jpg"
-                  alt="Facial cleansing"
-                /> -->
-                <h3 class="subtitle">Очищення обличчя</h3>
-              </article>
-            </li>
-          </ul>
-          <button class="button-arrow-right" type="button">
-            <svg width="17" height="17">
-              <use href="./img/sprite.svg#icon-arrowonly_left"></use>
-            </svg>
-          </button>
+          <div class="our-procedures__group">
+            <button class="button-arrow-left" type="button">
+              <svg width="17" height="17">
+                <use href="./img/sprite.svg#icon-arrowonly_left"></use>
+              </svg>
+            </button>
+            <ul class="our-procedures__list">
+              <li class="our-procedures__list-item">
+                <article class="our-procedures__block">
+                  <img
+                    class="our-procedures__image"
+                    src="./img/face_masks0.jpg"
+                    alt="masks for face"
+                  />
+                  <h3 class="subtitle">
+                    Маски<br />
+                    для обличчя
+                  </h3>
+                </article>
+              </li>
+              <li class="our-procedures__list-item">
+                <article class="our-procedures__block">
+                  <img
+                    class="our-procedures__image"
+                    src="./img/facial_injections.jpg"
+                    alt="a shot in the face"
+                  />
+                  <h3 class="subtitle">
+                    Ін'єкції<br />
+                    для обличчя
+                  </h3>
+                </article>
+              </li>
+              <li class="our-procedures__list-item">
+                <article class="our-procedures__block">
+                  <img
+                    class="our-procedures__image"
+                    src="./img/facial_cleancing.jpg"
+                    alt="Facial cleansing"
+                  />
+                  <h3 class="subtitle">Очищення обличчя</h3>
+                </article>
+              </li>
+            </ul>
+            <button class="button-arrow-right" type="button">
+              <svg width="17" height="17">
+                <use href="./img/sprite.svg#icon-arrowonly_left"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!-- 5 section -->
@@ -228,17 +242,19 @@
           </h2>
           <div class="how-find-us__flex-container">
             <iframe
-              class="iframe"
+              class="map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20300.704125147968!2d30.7655232!3d50.504625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1763404077087!5m2!1sru!2sua"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="how-find-us__block-sign-up block-sign-up">
-              <h3 class="block-sign-up__title">
-                Запишіться безкоштовно та отримайте подарунок
+            <div class="how-find-us__form form">
+              <h3 class="form__title">
+                Запишіться <span class="title_color-blu">безкоштовно</span>
+                <br />та отримайте подарунок
               </h3>
+
               <!-- form elements -->
             </div>
           </div>
@@ -249,10 +265,12 @@
       <div class="_container">
         <div class="footer__flex-container">
           <nav class="footer__nav">
-            <a class="footer__logo" href="#">
-              <img class="logo-bottom" src="./img/footer_logo.svg" alt="" />
-            </a>
-            <ul class="footer__menu menu-bottom">
+            <div class="footer__logo-block">
+              <a class="footer__logo" href="#">
+                <img class="logo-bottom" src="./img/footer_logo.svg" alt="" />
+              </a>
+            </div>
+            <ul class="menu-bottom">
               <li class="menu-bottom__list-item">
                 <a class="menu-bottom__link" href="#">Про нас</a>
               </li>
@@ -268,13 +286,13 @@
             </ul>
           </nav>
           <address class="footer__adress adress">
-            <ul class="adress__block">
+            <ul class="adress__list">
               <li class="adress__list-item">
                 <a class="address__link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
-              <li>
+              <li class="adress__list-item">
                 <a class="address__link" href="mailto:beautyzone@gmail.com"
                   >beautyzone@gmail.com</a
                 >
@@ -284,7 +302,8 @@
                   class="address__link"
                   href="https://maps.app.goo.gl/SggHoxf2YT9CrGeJ8"
                   target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5
+                  >Україна, м. Київ, <br />
+                  вул. Тараса Шевченка 5
                 </a>
               </li>
               <li class="adress__list-item">
@@ -317,12 +336,32 @@
                 </ul>
               </li>
             </ul>
+            <div class="footer__privacy privacy">
+              <a class="privacy-policy" href="#">Політика конфіденційності</a>
+              <p class="privacy-date">© 2022 Дані захищені</p>
+            </div>
           </address>
-
-          <a class="privacy-policy" href="#">Політика конфіденційності</a>
-          <p class="privacy-date">© 2022 Дані захищені</p>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__close-button" type="button">
+          Close
+          <svg class="modal__svg" width="32" height="32">
+            <use href="./img/sprite.svg#icon-close-button_icon"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Запишіться <span class="modal__text_color-blu">безкоштовно</span> та
+          отримайте подарунок
+        </p>
+        <form class="modal__form form">
+          <!-- form elements -->
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
