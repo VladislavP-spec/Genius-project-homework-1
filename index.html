@@ -254,7 +254,60 @@
                 Запишіться <span class="title_color-blu">безкоштовно</span>
                 <br />та отримайте подарунок
               </h3>
+              <form
+                class="modal__form form"
+                name="contact-form"
+                action="#"
+                method="post"
+                autocomplete="on"
+                novalidate
+              >
+                <div class="form__input-block">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                  />
+                  <label class="form__label" for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                </div>
 
+                <div class="form__input-block">
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="user-phone"
+                    name="user-phone"
+                  />
+                  <label class="form__label" for="user-phone"
+                    >Ваш номер телефону</label
+                  >
+                </div>
+
+                <div class="form__input-block">
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                  />
+                  <label class="form__label" for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                </div>
+
+                <div class="form__button-block">
+                  <button class="button-main form__submit-button" type="submit">
+                    Замовити дзвінок
+                  </button>
+                  <p class="form__privacy-text">
+                    Натискаючи на кнопку я погоджуюсь
+                    <a href="#">з політикою конфіденційності</a>
+                  </p>
+                </div>
+              </form>
               <!-- form elements -->
             </div>
           </div>
@@ -344,7 +397,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal__close-button" type="button">
           Close
@@ -354,11 +407,63 @@
         </button>
         <h2 class="modal__title title">Замовити дзвінок</h2>
         <p class="modal__text">
-          Запишіться <span class="modal__text_color-blu">безкоштовно</span> та
-          отримайте подарунок
+          Запишіться <span class="modal__text_color-blu">безкоштовно</span>
+          <br />
+          та отримайте подарунок
         </p>
-        <form class="modal__form form">
-          <!-- form elements -->
+        <form
+          class="modal__form form"
+          name="contact-form"
+          action="#"
+          method="post"
+          autocomplete="on"
+          novalidate
+        >
+          <div class="form__input-block">
+            <input
+              class="form__input"
+              type="text"
+              id="user-name"
+              name="user-name"
+            />
+            <label class="form__label" for="user-name"
+              >Ваше ім'я та прізвище</label
+            >
+          </div>
+
+          <div class="form__input-block">
+            <input
+              class="form__input"
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+            />
+            <label class="form__label" for="user-phone"
+              >Ваш номер телефону</label
+            >
+          </div>
+
+          <div class="form__input-block">
+            <input
+              class="form__input"
+              type="email"
+              id="user-email"
+              name="user-email"
+            />
+            <label class="form__label" for="user-email"
+              >Ваша електронна пошта</label
+            >
+          </div>
+
+          <div class="form__button-block">
+            <button class="button-main form__submit-button" type="submit">
+              Замовити дзвінок
+            </button>
+            <p class="form__privacy-text">
+              Натискаючи на кнопку я погоджуюсь
+              <a href="#">з політикою конфіденційності</a>
+            </p>
+          </div>
         </form>
       </div>
     </div>
