@@ -335,10 +335,7 @@ address {
 .how-find-us._container {
 	max-width: 1060px;
 }
-.how-find-us__flex-container {
-	display: flex;
-	gap: 32px;
-}
+
 .how-find-us__title {
 	text-align: center;
 	margin: 0 0 48px 0;
@@ -347,32 +344,46 @@ address {
 }
 .title_color-blu {
 }
-.map {
-	flex-shrink: 0;
-	border: none;
-	width: 100%;
-	max-width: 605px;
+.how-find-us__flex-container {
+	display: flex;
+	gap: 32px;
+}
+.map {	
+	flex-basis: 605px;
+	/* border: none; */
 	height: 481px;
 	border-radius: 32px;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.75);
 }
 
-.how-find-us__form {
-}
-
-.form {
-	background: var(--color-brand);
+.how-find-us__form-block {	
 	border-radius: 32px;
+	background: var(--color-brand);
+	color: var(--color-primary-light);	
+	flex-basis: 422px;
+	padding: 48px 56px 68px 56px;
+	max-height: 482px;	
+}
+.form-block__subtitle {
+	max-width: 274px;
+	font-size: 13px;
+	font-weight: 600;	
+	text-align: center;
+	margin: 0 auto 32px auto;
 }
 
-.form__title {
-	max-width: 274px;
-	color: var(--color-primary-light);
-	font-size: 13px;
-	font-weight: 600;
-	font-family: var(--fonts-roboto);
-	text-align: center;
+.form-block__subtitle_color-blue {
+	color: var(--color-accent);
+}
+
+.form__input-block {
+	position: relative;
 	margin: 0 0 16px 0;
+}
+
+.form__input {
+}
+.form__label {
 }
 
 /* footer */
@@ -528,7 +539,7 @@ address {
 .form {
 }
 
-.form__input-block {
+.form__input-block-modal {
 	position: relative;
 	margin: 0 0 24px 0;
 }
@@ -562,13 +573,19 @@ address {
 	font-size: 12px;
 }
 
+.button-main.form__submit-button {
+	display: block;
+	max-width: 281px;
+	width: 100%;
+	margin: 0 auto 8px auto;
+}
+
 .form__submit-button:hover {
 	background-color: var(--color-primary-light);
 	color: var(--color-brand);
-	margin: 0 0 8px 0;
 }
+
 .form__button-block {
-	text-align: center;
 }
 .form__privacy-text {	
 	max-width: 212px;
@@ -576,6 +593,7 @@ address {
 	line-height: 1.5;
 	color: var(--color-secondary-grey);
 	margin: 0 auto;
+	text-align: center;
 }
 
 .form__privacy-text a {
