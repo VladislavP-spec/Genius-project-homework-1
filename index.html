@@ -12,9 +12,7 @@
       rel="stylesheet"
     />
     <!-- style -->
-    <link rel="stylesheet" href="./css/null.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -83,7 +81,7 @@
       <section class="hero">
         <div class="_container">
           <h1 class="main-title">Косметологічна клініка</h1>
-          <span class="main-title_bigblu" href="">
+          <span class="main-title main-title_bigblu" href="">
             beauty <br />
             zone
           </span>
@@ -105,7 +103,7 @@
             <div class="about-us__title-block">
               <h2 class="about-us__title title">
                 Перевтілюйтесь в
-                <span class="title_color-blu">beauty zone!</span>
+                <span class=" title title_color-blu">beauty zone!</span>
               </h2>
               <p class="about-us__text">
                 Наша косметологічна клініка пропонує вам професійні послуги з
@@ -113,7 +111,7 @@
               </p>
               <p class="about-us__text">
                 B
-                <span class="about-us__text_color-black">beauty zone</span>
+                <span class="about-us__text about-us__text_color-black">beauty zone</span>
                 ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
                 косметологічні процедури та препарати допоможуть вам
                 підтримувати свою красу та молодість. <br />
@@ -130,7 +128,7 @@
       <!-- 3 section -->
       <section id="why-choose-us" class="why-choose-us">
         <div class="why-choose-us _container">
-          <h2 class="why-choose-us__title title">
+          <h2 class="why-choose-us__title title title_centered">
             Чому люди <span class="title title_color-blu">обирають нас</span>
           </h2>
           <ul class="why-choose-us__list">
@@ -417,38 +415,45 @@
           action="#"
           method="post"
           autocomplete="on"
-          novalidate
+          
         >
-          <div class="form__input-block-modal">
+          <div class="form__input-block form__input-block_modal">
             <input
               class="form__input"
               type="text"
               id="user-name-modal"
               name="user-name"
+              required
+              minlength="2"
+              maxlength="20"
             />
             <label class="form__label" for="user-name-modal"
               >Ваше ім'я та прізвище</label
             >
           </div>
 
-          <div class="form__input-block-modal">
+          <div class="form__input-block form__input-block_modal">
             <input
               class="form__input"
               type="tel"
               id="user-phone-modal"
               name="user-phone"
+              required
+              minlength="2"
             />
             <label class="form__label" for="user-phone-modal"
               >Ваш номер телефону</label
             >
           </div>
 
-          <div class="form__input-block-modal">
+          <div class="form__input-block form__input-block_modal">
             <input
               class="form__input"
               type="email"
               id="user-email-modal  "
               name="user-email"
+              required
+              minlength="2"
             />
             <label class="form__label" for="user-email-modal"
               >Ваша електронна пошта</label
@@ -456,7 +461,7 @@
           </div>
 
           <div class="form__button-block">
-            <button class="button-main form__submit-button" type="submit">
+            <button class="button-main form__submit-button" type="submit" minlength="2">
               Замовити дзвінок
             </button>
             <p class="form__privacy-text">

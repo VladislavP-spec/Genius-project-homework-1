@@ -1,0 +1,47 @@
+.about-us {
+}
+.about-us__flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  
+  &__title {
+  margin: 0 0 40px 0;
+}
+}
+
+.about-us__title-block {
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: var(--fonts-play);
+}
+.about-us__title .title_color-blu {
+  color: var(--color-accent);
+  text-transform: capitalize;
+}
+.title_color-blu {
+  color: var(--color-accent);
+}
+
+.about-us__text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 38px;
+  max-width: 650px;
+}
+
+.about-us__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.about-us__text_color-black {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.about-us__imb-block {
+}

@@ -1,0 +1,59 @@
+.hero {
+  padding: 122.52px 0 126.48px 0;
+  background: linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(../img/bcmain&header.jpg) center top no-repeat;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);    
+
+  &__button-block {
+    max-width: 238px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main-title {
+  margin: 0 0 16px 0;
+
+  &_bigblu {
+    display: inline-block;
+    text-transform: capitalize;
+    color: var(--color-accent);
+    font-family: var(--fonts-play);
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.81429;
+    margin: 0 0 40px 0;
+  }
+}
+
+.button-main {
+  color: var(--color-primary-light);
+  background: var(--color-accent);
+  border-radius: 32px;
+  border: 2px solid var(--color-accent);
+  font-size: 18px;
+  padding: 16px 32px;
+  margin: 0 0 14px 0;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+  color: var(--color-brand);
+  background: transparent;
+  border: 2px solid var(--color-accent);
+}
+
+}
+
+
+.button-description {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}

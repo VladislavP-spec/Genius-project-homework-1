@@ -1,0 +1,59 @@
+.how-find-us {
+  padding: 96px 0 96px 0;
+  background-color: #f3f7ff;
+
+  &._container {
+    max-width: 1060px;
+  }
+  &__title {
+    text-align: center;
+    margin: 0 0 48px 0;
+  }
+  &__flex-container {
+    display: flex;
+    gap: 32px;
+  }
+  &__form-block {
+    border-radius: 32px;
+    background: var(--color-brand);
+    color: var(--color-primary-light);
+    flex-basis: 422px;
+    padding: 48px 56px 68px 56px;
+    max-height: 482px;
+  }
+}
+
+.title {
+}
+.title_color-blu {
+}
+
+.map {
+  flex-basis: 605px;
+  /* border: none; */
+  height: 481px;
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.75);
+}
+.form-block {
+  &__subtitle {
+    max-width: 274px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 32px auto;
+  }
+  &__subtitle_color-blue {
+    color: var(--color-accent);
+  }
+}
+.form {
+  &__input-block {
+  position: relative;
+  margin: 0 0 16px 0;
+}
+}
+// .form__input {
+// }
+// .form__label {
+// }

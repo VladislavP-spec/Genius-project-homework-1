@@ -1,0 +1,58 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+}
+
+.body {
+  color: var(--color-brand);
+  font-family: var(--fonts-roboto);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33333;
+}
+
+address {
+  font-style: normal;
+}
